@@ -20,6 +20,7 @@
     "react-scroll": "^1.9.0",
     "sweetalert2": "^11.11.1"
   },
+  
   "devDependencies": {
     "daisyui": "^4.12.2",
     "eslint": "^8",
