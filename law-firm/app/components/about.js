@@ -63,23 +63,24 @@ const about = () => {
             At our law firm, we provide expert legal services in corruption, employment, real estate, corporate law, and tax matters. Our dedicated team delivers personalized solutions and robust representation for every client. We pride ourselves on professionalism, integrity, and commitment to justice. Whether facing legal challenges or seeking guidance, we are here to support you. Trust us to navigate the complexities of law with confidence.
             </p>
             <div className='lg:grid lg:grid-cols-3 gap-12'>
-                {services.map((item,index) => {
-                    const {icon, title, description1, description2} = item
-                    return (
-                        <div className='flex flex-col items-center justify-center mb-16 last:mb-0 lg:mb-0'>
-                            <Image src={icon} alt=''/>
-                            <h4 className='text-2xl mb-2 font-primary font-bold'>
-                            {title}
-                            </h4>
-                            <p className='max-w-[332px] lg:max-w-[350px]'>
-                            {description1}
-                            </p>
-                            <p className='max-w-[332px] lg:max-w-[350px]'>
-                            {description2}
-                            </p>
-                        </div>
-                    );
-                })}
+            {services.map((item, index) => {
+    const { icon, title, description1, description2 } = item;
+    return (
+        <div key={index} className='flex flex-col items-center justify-center mb-16 last:mb-0 lg:mb-0'>
+            <Image src={icon} alt=''/>
+            <h4 className='text-2xl mb-2 font-primary font-bold'>
+                {title}
+            </h4>
+            <p className='max-w-[332px] lg:max-w-[350px]'>
+                {description1}
+            </p>
+            <p className='max-w-[332px] lg:max-w-[350px]'>
+                {description2}
+            </p>
+        </div>
+    );
+})}
+
             </div>
         </div>
        
